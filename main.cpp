@@ -3,6 +3,24 @@
 #include <string>
 #include <functional>
 
+
+class P
+{
+public:
+	P(int, int, float);
+	P(std::initializer_list<int>, std::initializer_list<float>);
+};
+
+P::P(int,int,float)
+{
+
+}
+
+P::P(std::initializer_list<int>, std::initializer_list<float>)
+{
+
+}
+
 class Menu
 {
 private:
@@ -91,6 +109,9 @@ int main()
 	Menu menu;
 	menu.init_map();
 	menu.take_input();
+
+	P pp{ {1,2,3,4,5,6, }, {2.2, 2.3, 5.6} };
+
 	//std::string usrinput;
 	//std::getline(std::cin, usrinput);
 	
