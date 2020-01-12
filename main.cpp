@@ -21,6 +21,7 @@ P::P(std::initializer_list<int>, std::initializer_list<float>)
 
 }
 
+/*
 class Menu
 {
 private:
@@ -102,11 +103,13 @@ void Menu::exit()
 {
 	std::cout << "Game Exit\n";
 }
+*/
+#include "main_menu.h"
 
 int main()
 {
 
-	Menu menu;
+	main_menu menu;
 	menu.init_map();
 	menu.take_input();
 
